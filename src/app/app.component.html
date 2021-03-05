@@ -8,4 +8,8 @@
   {{10+4}}
 </p>
 
-<img src="{{imageURL}}" alt="">
+<!-- <img src="{{imageURL}}" alt=""> -->
+<input type="text" #welcomeMessage>
+<button (click) = "onClick(welcomeMessage.value)" >Click Me!</button>
+<p>{{message}}</p>
+
