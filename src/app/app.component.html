@@ -8,8 +8,26 @@
   {{10+4}}
 </p>
 
-<!-- <img src="{{imageURL}}" alt=""> -->
-<input type="text" #welcomeMessage>
-<button (click) = "onClick(welcomeMessage.value)" >Click Me!</button>
+<img src="{{imageURL}}" alt="" />
+<input type="text" #welcomeMessage />
+<button (click)="onClick(welcomeMessage.value)">Click Me!</button>
 <p>{{message}}</p>
 
+<!-- <img [src]="imageURL" alt="" /> -->
+
+<p [class.special]="isSpecial">
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos ab vel
+  laudantium dicta libero unde tempora, iste debitis nemo expedita soluta rerum
+  dolorum hic consequuntur sit perspiciatis sed. Impedit, natus!
+</p>
+
+<p [style.color]="redColor">
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos eligendi
+  aspernatur harum vel corrupti tenetur omnis corporis deleniti, labore dolore
+  dignissimos maiores voluptatum architecto voluptatem consequuntur animi
+  quaerat repudiandae sint.
+</p>
+
+<input type="text" [(ngModel)] = "username">
+<br>
+{{username}}
