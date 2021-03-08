@@ -6,7 +6,7 @@ import { Component, VERSION } from "@angular/core";
   styleUrls: ["./app.component.css"]
 })
 export class AppComponent {
-  username = "";
+  username: string = "";
   name = "Hello World";
   isSpecial: boolean = false;
   redColor = "green";
@@ -16,5 +16,13 @@ export class AppComponent {
   message: string = "";
   onClick(msg: string): void {
     this.message = msg;
+  }
+
+  checkUsername(): boolean {
+    return this.username.length == 0;
+  }
+
+  OnClick(): void {
+    this.username = "Helloworld";
   }
 }

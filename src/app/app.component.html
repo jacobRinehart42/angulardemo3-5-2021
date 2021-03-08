@@ -1,4 +1,4 @@
-<h1>
+<!-- <h1>
   {{name}}
 </h1>
 <p>
@@ -15,7 +15,7 @@
 
 <!-- <img [src]="imageURL" alt="" /> -->
 
-<p [class.special]="isSpecial">
+<!-- <p [class.special]="isSpecial">
   Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos ab vel
   laudantium dicta libero unde tempora, iste debitis nemo expedita soluta rerum
   dolorum hic consequuntur sit perspiciatis sed. Impedit, natus!
@@ -30,4 +30,9 @@
 
 <input type="text" [(ngModel)] = "username">
 <br>
-{{username}}
+{{username}} -->
+
+<input type="text" [(ngModel)] = "username">
+<p>{{username}}</p>
+
+<button [disabled]="checkUsername()" (click)="OnClick()">Click me</button>
